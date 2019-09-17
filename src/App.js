@@ -6,6 +6,7 @@ import './App.css';
 
 import Sidebar from './components/Sidebar';
 import Video from './components/Video';
+import Repository from './components/Repositories';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Provider store={store}>
         <Video />
         <Sidebar />
+        <Repository />
       </Provider>
     </div>
   );

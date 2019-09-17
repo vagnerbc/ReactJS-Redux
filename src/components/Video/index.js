@@ -11,7 +11,9 @@ const Video = ({ activeModule, activeLesson }) => (
      
 );
 
-export default connect(state => ({
+const mapStateToProps = (state) => ({
     activeLesson: state.courseReducer.activeLesson,
     activeModule: state.courseReducer.activeModule
-}))(Video);
+});
+
+export default connect(mapStateToProps)(Video);
